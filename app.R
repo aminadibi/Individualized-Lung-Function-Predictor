@@ -90,7 +90,7 @@ ui <- fluidPage(
                                 characteristics, and 1-year prior history of FEV1. Interested model as well as other
                                 patient's characteristics can be selected below for seeing the predicted rate of lung
                                 function decline."),
-                          h4("Developed by Zafar Zafari"),
+                          h5("Individualized FEV1 predictor is developed by Zafar Zafari, Ainsleigh Hill, Jane Krot, and Amin Adibi."),
                           h5("This web application is based on the paper entitled 'Individualised prediction of lung function
                               decline in COPD'.", br(), "Authors: Zafar Zafari, Don D. Sin, Dirkje S. Postma, Claes-Goran Lofdahl,
                               Judith Vonk, Stirling Bryan, Rahman Khakban, S.F. Paul Man, Donald Tashkin, Robert A. Wise,
