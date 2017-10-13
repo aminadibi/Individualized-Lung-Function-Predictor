@@ -229,7 +229,7 @@ server <- (function(input, output, session) {
 			                annotate("text", 1, 3.52, label="Mean FEV1 decline", colour="black", size=4, hjust=0) +
 			                annotate("text", 1.15, 3.4, label=coverageInterval, colour=errorLineColor, size=4, hjust=0) +
 			                labs(x=xlab, y=ylab) +
-			                theme_bw()) %>% config(displaylogo=F, displayModeBar=F, modeBarButtonsToRemove=buttonremove)
+			                theme_bw()) %>% config(displaylogo=F, doubleClick=F,  displayModeBar=F, modeBarButtonsToRemove=buttonremove) %>% layout(xaxis=list(fixedrange=TRUE)) %>% layout(yaxis=list(fixedrange=TRUE))
 			print(p)
 
 			p$x$data[[1]]$text <- paste0("Time (years): ", df$Time, "<br />", "FEV1 (L): ", round(df$FEV1,3),
@@ -324,7 +324,7 @@ server <- (function(input, output, session) {
 			  layout(yaxis=list(title='Probability (%)'), barmode='stack',
 			         xaxis=list(title='Year', type='category', categoryorder='trace'),
 			         title='Probability of the selected patient being at each GOLD grade',
-			         hovermode='x') %>% config(displaylogo=F, displayModeBar=F, modeBarButtonsToRemove=buttonremove)
+			         hovermode='x') %>% config(displaylogo=F, doubleClick=F, displayModeBar=F, modeBarButtonsToRemove=buttonremove)  %>% layout(xaxis=list(fixedrange=TRUE)) %>% layout(yaxis=list(fixedrange=TRUE))
 
     print(p)
 
