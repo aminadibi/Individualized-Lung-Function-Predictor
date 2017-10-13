@@ -15,7 +15,7 @@ ui <- fluidPage(
                         font-size: 16px;
            }"
                         )),
-  titlePanel("Individualized Prediction of FEV1"),
+  titlePanel("Individualized FEV1 Predictor"),
 
   sidebarLayout(
 
