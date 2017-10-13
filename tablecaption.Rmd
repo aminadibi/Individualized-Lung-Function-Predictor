@@ -1,0 +1,5 @@
+---
+output: html_document
+---
+
+This table quantifies heterogeneity. Please note that Coefficient of Variation (CV) is a measure of heterogeneity calculated by the ratio of standard deviation to the mean FEV1 decline (i.e., it represents noise to signal ratio). In this table CV is shown at different years. For instance, CV for year 2 represents the amount of heterogeneity around mean FEV1 decline over 2 years.

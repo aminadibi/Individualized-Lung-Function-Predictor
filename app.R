@@ -2,6 +2,7 @@ library(shiny)
 library(ggplot2)
 library(plotly)
 library(shinyBS)
+library(shinythemes)
 #devtools::install_github("shiny", "rstudio")
 
 source ('./FEV1_projection.R')
@@ -10,7 +11,7 @@ options(shiny.error = function() {
 }) # removes red error message from Shiny webpage
 
 # Define UI for dataset viewer application
-ui <- fluidPage(
+ui <- fluidPage(theme = shinytheme("united"),
   tags$head(tags$style("#prob_decliner{color: black;
                         font-size: 16px;
            }"
@@ -73,11 +74,7 @@ ui <- fluidPage(
                   type = "tabs",
                   tabPanel("FEV1 Projection", plotlyOutput("figure"), br(), br(), textOutput("prob_decliner"),
                            br(), tableOutput("cv"), br(),
-                          h4("This table quantifies heterogeneity. Please note that Coefficient of Variation (CV)
-                              is a measure of heterogeneity calculated by the ratio of standard deviation to the mean
-                              FEV1 decline (i.e., it represents noise to signal ratio). In this table CV is shown
-                              at different years. For instance, CV for year 2 represents the amount of heterogeneity around
-                              mean FEV1 decline over 2 years.")),
+                           includeMarkdown("tablecaption.Rmd")),
                   tabPanel("GOLD Grade", br(), br(), plotlyOutput("severity"), tableOutput("sevTab")),
                   tabPanel("About",  includeMarkdown("about.Rmd"))
             )
@@ -263,7 +260,7 @@ server <- (function(input, output, session) {
 			prob_text <- 'Probability that this patient will be a rapid decliner over the next 11 years
 			  (declines more than 40 ml/year): '
       bb1 <- paste0(prob_text, as.numeric(bb1), "%")
-			return(bb1)
+			print(bb1)
 	})
 
 	output$severity<-renderPlotly({
