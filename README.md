@@ -1,0 +1,17 @@
+# Individualized-Lung-Function-Predictor
+Personalized FEV1 decline 
+
+This web application is built for the individualized prediction of lung function decline based on 3 models:
+
+1. Prediction of future lung function decline based on baseline FEV1
+
+2. Prediction of future lung function decline based on baseline FEV1 and patients' clinical characteristics
+
+3. Prediction of future lung function decline based on baseline FEV1, patients' clinical characteristics, and 1-year prior history of FEV1. 
+                         
+#### Credits
+Individualized FEV1 predictor is created by Zafar Zafari, Ainsleigh Hill, Jane Krot, and Amin Adibi. 
+
+Please cite this paper when using the results of this web application:
+
+Zafari Z, Sin DD, Postma DS, Löfdahl CG, Vonk J, Bryan S, Lam S, Tammemagi CM, Khakban R, Man SP, Tashkin D, Wise RA, Connnett JE, McManus B, Ng R, Hollander Z, Sadatsafavi M. Individualized prediction of lung-function decline in chronic obstructive pulmonary disease. Canadian Medical Association Journal. 2016 Oct 4;188(14):1004-11.
