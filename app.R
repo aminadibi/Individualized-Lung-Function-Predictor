@@ -257,8 +257,7 @@ server <- (function(input, output, session) {
 	output$prob_decliner<-renderText({
 
       bb1 <- data()$bb1
-			prob_text <- 'Probability that this patient will be a rapid decliner over the next 11 years
-			  (declines more than 40 ml/year): '
+			prob_text <- 'Probability of being a rapid decliner (i.e. more than 40 ml/yr) over the next 11 years: '
       bb1 <- paste0(prob_text, as.numeric(bb1), "%")
 			print(bb1)
 	})
