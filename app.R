@@ -228,10 +228,10 @@ server <- (function(input, output, session) {
 			                labs(x=xlab, y=ylab) +
 			                theme_bw()) %>% config(displaylogo=F, doubleClick=F,  displayModeBar=F, modeBarButtonsToRemove=buttonremove) %>% layout(xaxis=list(fixedrange=TRUE)) %>% layout(yaxis=list(fixedrange=TRUE))
 			print(p)
-
+  
 			p$x$data[[1]]$text <- paste0("Time (years): ", df$Time, "<br />", "FEV1 (L): ", round(df$FEV1,3),
-			                             "<br />FEv1 lower (L): ", round(df$FEV1_lower,3), "<br />FEV1 upper (L): ",
-			                             round(df$FEV1_upper),3)
+			                             "<br />FEV1 lower (L): ", round(df$FEV1_lower,3), "<br />FEV1 upper (L): ",
+			                             round(df$FEV1_upper,3))
 
 			p$x$data[[3]]$hoverinfo="none"
 			p$x$data[[4]]$hoverinfo="none"
