@@ -69,6 +69,10 @@ ui <- fluidPage(theme = shinytheme("united"),
   # function to provide an additional header above each output
   # section.
   mainPanel(
+    #hiding errors
+    tags$style(type="text/css",
+               ".shiny-output-error { visibility: hidden; }",
+               ".shiny-output-error:before { visibility: hidden; }"),
 
           tabsetPanel(
                   type = "tabs",
