@@ -80,7 +80,7 @@ ui <- fluidPage(theme = shinytheme("united"),
                            br(), tableOutput("cv"), br(),
                            includeMarkdown("tablecaption.Rmd")),
                   tabPanel("GOLD Grade", br(), br(), plotlyOutput("severity"), tableOutput("sevTab")),
-                  tabPanel("Terms",  includeMarkdown("disclaimer.Rmd")),
+                  tabPanel("Terms",  includeMarkdown("disclaimer.rmd")),
                   tabPanel("About",  includeMarkdown("about.Rmd"))
             )
   )
