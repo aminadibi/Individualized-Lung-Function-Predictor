@@ -16,7 +16,7 @@ ui <- fluidPage(theme = shinytheme("united"),
                         font-size: 16px;
            }"
                         )),
-  titlePanel("Individualized FEV1 Predictor"),
+  titlePanel("Lung Function Predictor for COPD Patients"),
 
   sidebarLayout(
 
