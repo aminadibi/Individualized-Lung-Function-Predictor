@@ -13,7 +13,7 @@ This web application is built for the individualized prediction of lung function
 3. Prediction of future lung function decline based on baseline FEV1, patients' clinical characteristics, and 1-year prior history of FEV1. 
                          
 #### Credits
-Individualized FEV1 predictor is created by Zafar Zafari, Ainsleigh Hill, Jane Krot, and Amin Adibi. 
+Individualized FEV1 predictor is created by Zafar Zafari, Ainsleigh Hill, Jane Krot, Amin Adibi, and Mohsen Sadatsafdavi. 
 
 Please cite this paper when using the results of this web application:
 
